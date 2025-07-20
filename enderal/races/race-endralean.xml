@@ -78,7 +78,7 @@
 			<description>Gain one feat at 1st level</description>
 		</sheet>
 		<rules>
-			<grant type="Feat" count="1"/>
+			<select type="Feat" name="Feat (Endralean)" />
 		</rules>
 	</element>
 
