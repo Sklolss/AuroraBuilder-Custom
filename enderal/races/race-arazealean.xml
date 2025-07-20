@@ -92,4 +92,33 @@
 			<description>You have advantage to saves against exhaustion, disease and poison</description>
 		</sheet>
 	</element>
+  <element name="Jotunblood Manifest" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_JOTUNBLOOD_MANIFEST">
+      <description>
+          <p>Once unlocked, you gain all of the below boni:
+            <ul>
+              <li><strong>Prime Physique:</strong> Increase your STR or CON score by 2 (max 22).</li>
+              <li><strong>Titan's Grip:</strong> You may wield two-handed weapons in one hand.</li>
+              <li><strong>Unbreakable:</strong> Reduce all incoming damage by 3.</li>
+            </ul>
+          </p>
+      </description>
+      <setters>
+          <!-- Hidden mechanics for system tracking -->
+          <set name="ability">str,con</set>
+          <set name="ability bonus">2</set>
+          <set name="ability maximum">22</set>
+          <set name="damage reduction">3</set>
+      </setters>
+      <sheet>
+          <description>
+              <p><strong>Arazealean Jotunblood Manifestations:</strong></p>
+              <ul>
+                  <li><strong>Prime Physique:</strong> Increase your STR or CON score by 2 (max 22).</li>
+                  <li><strong>Titan's Grip:</strong> You may wield two-handed weapons in one hand.</li>
+                  <li><strong>Unbreakable:</strong> Reduce all incoming damage by 3.</li>
+              </ul>
+              <p><strong>Innate Resistance:</strong> You have advantage on saving throws against exhaustion, disease, and poison.</p>
+          </description>
+      </sheet>
+  </element>
 </elements>
