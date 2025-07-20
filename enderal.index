@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>Enderal Handbook</name>
+    <description>Reference Guide for my Enderal Campaign. It contains custom rules, races and features.</description>
+    <author url="https://github.com/Sklolss">Sklolss</author>
+    <update version="0.1">
+      <file name="enderal.index" url="http://hosting.com/files/sample.index" />
+    </update>
+  </info>
+  <files>
+    <file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/source.xml" />
+
+    <!-- races-->
+    <file name="Arazealean.xml" url="http://hosting.com/enderal/Arazealean.xml" />
+    
+
+  </files>
+</index>

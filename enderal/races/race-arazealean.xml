@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arazealean</name>
+		<description></description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-arazealean.xml" url="TODO" />
+		</update>
+	</info>
+	
+	<element name="Arazealean" type="Race" source="Enderal Handbook" id="ID_RACE_Arazealean">
+		<description>
+      <h4>Arazealean NAMES</h4>
+			<p> Arazealean (specifically, Civilized) names are short and rarely more than two syllables. But they almost always have a second first name. The surnames indicate the social class to which they belong</p>
+      <p>
+        <b>Male Names: Male names often, but notalways, end in -yk. Example: Riyk Yol Vi (Riyk The Lowly Craftsman) </b>
+        <br/>
+        <b>Female Names: Female names often, but notalways, end in -yke. Example: Asha He Tis (Asha The Wealthy Priest) </b>
+			</p>
+
+			<h4>Arazealean TRAITS</h4>
+			<p>
+			<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2, and your Strength score increases by 1.
+			<br />
+			<span class="feature">Age.</span>Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.
+			<br />
+			<span class="feature">Alignment.</span>Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains.
+			<br />
+			<span class="feature">Size.</span>Arazealean are taller and heavier than most other humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.
+			<br />
+			<span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			<br />
+      <span class="feature">Arazealean Resilience</span>Your Unarmored AC is 13 + your STR modifier.
+			<span class="feature">Unbreakable</span>You have advantage to saves against exhaustion, disease and poison.
+			<br />
+			<span class="feature">Languages.</span>You can speak, read, and write Vynic.
+			<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+      <!-- Male Names (often end in -yk) -->
+      <set name="names" type="male">Riyk, Daryk, Voryk, Kalyk, Moryk, Zelyk, Haryk, Noryk</set>
+      <!-- Female Names (usually end in -yke) -->
+      <set name="names" type="female">Alyke, Maryke, Saryke, Toryke, Velyke, Karyke, Daryke, Noryke</set>
+      <!-- Second First Names (optional, gender-neutral) -->
+      <set name="names" type="secondFirstName">Asha, He, Dyr, Vyn, Kor, Mir, Tyl, Sen</set>
+      <!-- Surnames (social class indicators) -->
+      <set name="names" type="Surname">Vi, Yo, Zel, Tis</set>
+      <!-- Optional Secondary Surnames (if needed for nobility, clans, etc.) -->
+      <set name="names" type="optionalSurname">Xan, Droth, Khar, Vess, Rhan, Syl, Morth, Yth</set>
+			<set name="names-format">{{firstName}{ {secondFirstName}?}{ {Surname}?}{ {optionalSurname}?}}</set>
+			<set name="height" modifier="2d8">5'6"</set>
+			<set name="weight" modifier="2d6">175 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2"/>
+			<stat name="strength" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARAZEALEAN_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_UBREAKABLE" />
+		</rules>
+	</element>
+	<element name="Arazealean Resilience" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_ARAZEALEAN_RESILIENCE">
+		<description>
+			<p>Your Unarmored AC is 13 + your STR modifier + your CON modifier. You can still gain a bonus from shields.</p>
+		</description>
+    <sheet>
+			<description>While you aren’t wearing armor, your AC equals {{ac:Arazealean Resilience}}. You can use a shield and still gain this benefit.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Arazealean Resilience" supports="Arazealean Resilience" />
+      <stat name="ac:Arazealean Resilience:base" value="10" />
+			<stat name="ac:Arazealean Resilience:strength" value="strength:modifier" />
+			<stat name="ac:Arazealean Resilience:constitution" value="constitution:modifier" />
+
+			<stat name="ac:Arazealean Resilience" value="ac:Arazealean Resilience:base" />
+			<stat name="ac:Arazealean Resilience" value="ac:Arazealean Resilience:strength" />
+			<stat name="ac:Arazealean Resilience" value="ac:Arazealean Resilience:constitution" />
+
+			<stat name="ac:calculation" value="ac:Arazealean Resilience" bonus="calculation" equipped="[armor:none]" alt="Arazealean Resilience" />
+		</rules>
+	</element>
+	<element name="Unbreakable" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_UBREAKABLE">
+		<description>
+			<p>You have advantage to saves against exhaustion, disease and poison.</p>
+		</description>
+	</element>
+</elements>
