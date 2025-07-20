@@ -12,7 +12,7 @@
     <file name="source.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/source.xml" />
 
     <!-- races-->
-    <file name="Arazealean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-arazealean.xml" />
+    <file name="arazealean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-arazealean.xml" />
     <file name="race-pyreborn.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-pyreborn.xml" />
     <file name="race-ashborn.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-ashborn.xml" />
     <file name="race-sternling.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-sternling.xml" />
