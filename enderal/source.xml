@@ -11,7 +11,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">EHB</set>
-			<set name="sources.xml" >"https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/source.xml"</set>
+			<set name="url" >"https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/source.xml"</set>
 			<set name="author" url="https://github.com/Sklolss">Sklolss</set>
 			<set name="official">false</set>
 			<set name="core">false</set>
