@@ -55,7 +55,7 @@
 		</setters>
 		<rules>
 			<stat name="charisma" value="1"/>
-            <select type="Racial Trait" name="Ability Score Increase (Kiléan)" supports="Kiléan" number="2" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK"/>
+            <select type="Racial Trait" name="Ability Score Increase (Kiléan)" supports="Kilean" number="2" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK"/>
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
@@ -89,7 +89,7 @@
 	</element>
 	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_DEXTERITY">
 		<compendium display="false" />
-		<supports>Kiléan</supports>
+		<supports>Kilean</supports>
 		<description>
 			<p>Your Dexterity score increases by 1.</p>
 		</description>
@@ -97,9 +97,9 @@
 			<stat name="dexterity" value="1"/>
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_CONSTITUTION">
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_KILEAN_CONSTITUTION">
 		<compendium display="false" />
-		<supports>Kiléan</supports>
+		<supports>Kilean</supports>
 		<description>
 			<p>Your Constitution score increases by 1.</p>
 		</description>
@@ -107,9 +107,9 @@
 			<stat name="constitution" value="1"/>
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_INTELLIGENCE">
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_KILEAN_INTELLIGENCE">
 		<compendium display="false" />
-		<supports>Kiléan</supports>
+		<supports>Kilean</supports>
 		<description>
 			<p>Your Intelligence score increases by 1.</p>
 		</description>
@@ -117,9 +117,9 @@
 			<stat name="intelligence" value="1"/>
 		</rules>
 	</element>
-	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_WISDOM">
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_KILEAN_WISDOM">
 		<compendium display="false" />
-		<supports>Kiléan</supports>
+		<supports>Kilean</supports>
 		<description>
 			<p>Your Wisdom score increases by 1.</p>
 		</description>
@@ -127,17 +127,36 @@
 			<stat name="wisdom" value="1"/>
 		</rules>
 	</element>
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_KILEAN_STRENGTH">
+		<compendium display="false" />
+		<supports>Kilean</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_KILEAN_CHARISMA">
+		<compendium display="false" />
+		<supports>Kilean</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="1"/>
+		</rules>
+	</element>
 
     <!-- Mythic Trait-->
   <element name="Silver-Tongued Demagogue" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_SILVER_TONGUED_DEMAGOGUE">
       <description>
-          <p>Once unlocked, you gain all of the below boni:
+          <p>Once unlocked, you gain all of the below boni:</p>
             <ul>
               <li><strong>Renowned Trader:</strong> Increase your CHA score by 2 (max 22).</li>
               <li><strong>Golden Lies:</strong> Your Charm Person works on creatures immune to charm (but they remember being manipulated).</li>
               <li><strong>Guild Lord's Command:</strong> Issue a 10-word command (as Suggestion) to all who can hear you once per day (Wisdom save negates).</li>
             </ul>
-          </p>
       </description>
       <setters>
           <!-- Hidden mechanics for system tracking -->
@@ -147,7 +166,7 @@
       </setters>
       <sheet>
           <description>
-              <p><strong>Silver-Tongued Demagogue:</strong></p>
+              <p><strong>Silver-Tongued Demagogue (When unlocked):</strong></p>
               <ul>
                   <li><strong>Renowned Trader:</strong> Increase your CHA score by 2 (max 22).</li>
                   <li><strong>Golden Lies:</strong> Your Charm Person works on creatures immune to charm (but they remember being manipulated).</li>

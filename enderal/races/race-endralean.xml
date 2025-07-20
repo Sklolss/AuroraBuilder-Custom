@@ -62,11 +62,8 @@
 		<description>
 			<p>You gain proficiency in one skill of your choice.</p>
 		</description>
-		<sheet>
-			<description>Gain proficiency in one skill</description>
-		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILLS_CHOICE" count="1" />
+			 <select type="Proficiency" name="Skill Proficiency (Endralean)" supports="Skill" />
 		</rules>
 	</element>
 	
@@ -74,9 +71,6 @@
 		<description>
 			<p>You gain one feat at 1st level.</p>
 		</description>
-        <sheet>
-			<description>Gain one feat at 1st level</description>
-		</sheet>
 		<rules>
 			<select type="Feat" name="Feat (Endralean)" />
 		</rules>
