@@ -5,18 +5,17 @@
     <description>Reference Guide for my Enderal Campaign. It contains custom rules, races and features.</description>
     <author url="https://github.com/Sklolss">Sklolss</author>
     <update version="0.1">
-      <file name="enderal.index" url="http://hosting.com/files/sample.index" />
+      <file name="enderal.index" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal.index" />
     </update>
   </info>
   <files>
-    <file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/source.xml" />
+    <file name="source.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/source.xml" />
 
     <!-- races-->
     <file name="Arazealean.xml" url="http://hosting.com/enderal/Arazealean.xml" />
     
     <!-- misc -->
-    TODO:
-    <file name="languages.xml" url="" />
-    <file name="deities.xml" url="" />
+    <file name="languages.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/languages.xml" />
+    <file name="deities.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/deities.xml" />
   </files>
 </index>
