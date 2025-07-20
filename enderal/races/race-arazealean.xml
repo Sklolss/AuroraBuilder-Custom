@@ -69,11 +69,11 @@
 			<p>Your Unarmored AC is 13 + your STR modifier + your CON modifier. You can still gain a bonus from shields.</p>
 		</description>
     <sheet>
-			<description>While you aren’t wearing armor, your AC equals {{ac:Arazealean Resilience}}. You can use a shield and still gain this benefit.</description>
+			<description>While you aren’t wearing armor, your AC equals {{ac:Arazealean Resilience:base}} + STR modifier + CON modifier. You can use a shield and still gain this benefit.</description>
 		</sheet>
 		<rules>
 			<select type="Racial Trait" name="Arazealean Resilience" supports="Arazealean Resilience" />
-      <stat name="ac:Arazealean Resilience:base" value="10" />
+      <stat name="ac:Arazealean Resilience:base" value="13" />
 			<stat name="ac:Arazealean Resilience:strength" value="strength:modifier" />
 			<stat name="ac:Arazealean Resilience:constitution" value="constitution:modifier" />
 
@@ -88,5 +88,8 @@
 		<description>
 			<p>You have advantage to saves against exhaustion, disease and poison.</p>
 		</description>
+    <sheet>
+			<description>You have advantage to saves against exhaustion, disease and poison</description>
+		</sheet>
 	</element>
 </elements>
