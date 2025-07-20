@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Deities of Vyn</name>
+    <description>Gods and goddesses worshipped across the continent of Vyn.</description>
+    <author>Your Name/Setting</author>
+    <update version="0.1">
+      <file name="deities.xml" url="[YOUR_GITHUB_RAW_URL_HERE]" />
+    </update>
+  </info>
+
+  <!-- Light-Born Pantheon -->
+  <element name="Tyr" type="Deity" source="Enderal Handbook" id="ID_DEITY_TYR">
+    <description>
+      <p class="flavor">The Allfather and highest of the Light-Born, Warden of Tirmatral and Lord of Inodan.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">LG</set>
+      <set name="domains">Light, War</set>
+      <set name="symbol">Radiant crown encircling a sun</set>
+      <set name="gender">male</set>
+    </setters>
+    <sheet>
+      <description>God of sovereignty, order, and the heavens.</description>
+    </sheet>
+  </element>
+
+  <element name="Irlanda" type="Deity" source="Enderal Handbook" id="ID_DEITY_IRLANDA">
+    <description>
+      <p class="flavor">Goddess of justice, Keeper of the Temple of Creators, and Lady of Arazeal.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">LN</set>
+      <set name="domains">War, Justice (Homebrew)</set>
+      <set name="symbol">Scales superimposed over a sword</set>
+      <set name="gender">female</set>
+    </setters>
+    <sheet>
+      <description>Patron of lawgivers and enforcers, feared as the "Bloody Goddess" by heretics.</description>
+    </sheet>
+  </element>
+
+  <element name="Erodan" type="Deity" source="Enderal Handbook" id="ID_DEITY_ERODAN">
+    <description>
+      <p class="flavor">God of wisdom and ancient rites, grandson of Tyr and rightful ruler of Nehrim.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">NG</set>
+      <set name="domains">Knowledge, Life</set>
+      <set name="symbol">Open tome with a glowing rune</set>
+      <set name="gender">male</set>
+    </setters>
+    <sheet>
+      <description>Guardian of sacred traditions and scholarly pursuits.</description>
+    </sheet>
+  </element>
+
+  <element name="Malphas" type="Deity" source="Enderal Handbook" id="ID_DEITY_MALPHAS">
+    <description>
+      <p class="flavor">The God-Warden, creator of the Seraphim and Paladin orders, and Lord of Enderal.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">LG</set>
+      <set name="domains">War, Protection (Homebrew)</set>
+      <set name="symbol">Winged gauntlet clutching a flame</set>
+      <set name="gender">male</set>
+    </setters>
+    <sheet>
+      <description>Champion of divine warriors and holy crusades.</description>
+    </sheet>
+  </element>
+
+  <element name="Esara" type="Deity" source="Enderal Handbook" id="ID_DEITY_ESARA">
+    <description>
+      <p class="flavor">Goddess of memories, daughter of Tyr, and Keeper of the Halls of Knowledge.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">NG</set>
+      <set name="domains">Knowledge, Grave (Homebrew)</set>
+      <set name="symbol">Silver mirror reflecting a star</set>
+      <set name="gender">female</set>
+    </setters>
+    <sheet>
+      <description>Preserver of history and secrets of the departed.</description>
+    </sheet>
+  </element>
+
+  <element name="Saldrin" type="Deity" source="Enderal Handbook" id="ID_DEITY_SALDRIN">
+    <description>
+      <p class="flavor">God of knowledge and progress, and Lord of Qyra.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">LN</set>
+      <set name="domains">Knowledge, Forge</set>
+      <set name="symbol">Gear inscribed with arcane sigils</set>
+      <set name="gender">male</set>
+    </setters>
+    <sheet>
+      <description>Patron of inventors, scholars, and the Golden Queen’s reign.</description>
+    </sheet>
+  </element>
+
+  <element name="Morala" type="Deity" source="Enderal Handbook" id="ID_DEITY_MORALA">
+    <description>
+      <p class="flavor">Goddess of language and trade, creator of the Inâl, and Lady of Kilé.</p>
+    </description>
+    <setters>
+      <set name="setting">Vyn</set>
+      <set name="alignment">N</set>
+      <set name="domains">Trickery, Trade (Homebrew)</set>
+      <set name="symbol">Golden coin with a serpent’s tongue</set>
+      <set name="gender">female</set>
+    </setters>
+    <sheet>
+      <description>Mistress of merchants, diplomats, and linguistic arts.</description>
+    </sheet>
+  </element>
+</elements>

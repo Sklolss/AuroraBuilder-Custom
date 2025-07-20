@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages of Vyn</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="[YOUR_GITHUB_RAW_URL_HERE]" />
+		</update>
+	</info>
+
+	<!-- Very Common / Common Languages -->
+	<element name="Vynic" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_VYNIC">
+		<supports>Standard</supports>
+		<description>
+			<p>The common tongue of Vyn, spoken across Enderal. Functions as the <i>lingua franca</i> for trade, governance, and daily life.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Civilized creatures</set>
+			<set name="script">Vynic</set>
+		</setters>
+	</element>
+	<element name="Nehrimese" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_NEHRIMESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Native language of Nehrim, preserved culturally despite Vynic dominance.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Nehrimese</set>
+			<set name="script">Nehrimese</set>
+		</setters>
+	</element>
+	<element name="Makehu" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_MAKEHU">
+		<supports>Standard</supports>
+		<description>
+			<p>Spoken in the Kilayan Archipelago, with rhythmic cadences influenced by ocean winds.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Kilayans</set>
+			<set name="script">Makehu</set>
+		</setters>
+	</element>
+	<element name="Sternling" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_STERNLING">
+		<supports>Standard</supports>
+		<description>
+			<p>A guttural, structured language with runic script, used by Sternlings and duergar.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Sternlings, duergar</set>
+			<set name="script">Sternling Runes</set>
+		</setters>
+	</element>
+	<element name="Áternaish" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_ATERNAISH">
+		<supports>Standard</supports>
+		<description>
+			<p>Flowing and melodic, with intricate calligraphy. Often associated with fey ancestry.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Áeterna, half-Áeterna, fey</set>
+			<set name="script">Áternaish Script</set>
+		</setters>
+	</element>
+
+	<!-- Uncommon Languages -->
+	<element name="Giant" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_GIANT">
+		<supports>Standard</supports>
+		<description>
+			<p>Deep and booming, derived from ancient runes. Spoken by giants and barbarian tribes.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Giants, ogres, trolls</set>
+			<set name="script">Giant Runes</set>
+		</setters>
+	</element>
+	<element name="Goblin" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_GOBLIN">
+		<supports>Standard</supports>
+		<description>
+			<p>Harsh and clipped, optimized for battlefield commands.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Goblins, hobgoblins, bugbears</set>
+			<set name="script">Goblin Glyphs</set>
+		</setters>
+	</element>
+	<element name="Orc" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_ORC">
+		<supports>Standard</supports>
+		<description>
+			<p>Gruff and war-focused, with many terms for conquest.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Orcs, half-orcs</set>
+			<set name="script">Orcish Marks</set>
+		</setters>
+	</element>
+	<element name="Ashlander Dialects" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_ASHLANDER">
+		<supports>Standard</supports>
+		<description>
+			<p>Regional nomadic variants blending Pyrean and Nehrimese roots.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Ashlanders</set>
+			<set name="script">Vynic (adapted)</set>
+		</setters>
+	</element>
+
+	<!-- Rare / Very Rare Languages -->
+	<element name="Celestial" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_CELESTIAL">
+		<supports>Exotic</supports>
+		<description>
+			<p>Harmonious and divine, resembling choral music.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Angels, clerics</set>
+			<set name="script">Celestial Script</set>
+		</setters>
+	</element>
+	<element name="Draconic" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_DRACONIC">
+		<supports>Exotic</supports>
+		<description>
+			<p>Ancient and hissing, the language of magic and dragons.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Dragons, Pyreborn</set>
+			<set name="script">Draconic Sigils</set>
+		</setters>
+	</element>
+	<element name="Pyrean" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_PYREAN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Extinct language of the Pyrean civilization, found only in ruins.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Scholars, elites</set>
+			<set name="script">Pyrean Glyphs</set>
+		</setters>
+	</element>
+
+	<!-- Secret Languages -->
+	<element name="Thieves’ Cant" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_THIEVES_CANT">
+		<supports>Secret</supports>
+		<description>
+			<p>A mix of slang, gestures, and coded speech used by criminals.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Rogues, spies</set>
+		</setters>
+	</element>
+	<element name="Druidic" type="Language" source="Enderal Handbook" id="ID_LANGUAGE_DRUIDIC">
+		<supports>Secret</supports>
+		<description>
+			<p>A forbidden tongue, spoken only by druids.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Druids</set>
+		</setters>
+	</element>
+</elements>
