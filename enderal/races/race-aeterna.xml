@@ -69,7 +69,7 @@
 			<description>Two wizard cantrips</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" level="0" class="ID_CLASS_WIZARD" count="2" />
+			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard&amp;&amp;0" count="2" />
 		</rules>
 	</element>
 	
