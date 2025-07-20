@@ -12,7 +12,7 @@
     <file name="source.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/source.xml" />
 
     <!-- races-->
-    <file name="Arazealean.xml" url="http://hosting.com/enderal/Arazealean.xml" />
+    <file name="Arazealean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-arazealean.xml" />
     
     <!-- misc -->
     <file name="languages.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/languages.xml" />

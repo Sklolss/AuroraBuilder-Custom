@@ -5,7 +5,7 @@
     <description>Gods and goddesses worshipped across the continent of Vyn.</description>
     <author>Your Name/Setting</author>
     <update version="0.1">
-      <file name="deities.xml" url="[YOUR_GITHUB_RAW_URL_HERE]" />
+      <file name="deities.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/deities.xml" />
     </update>
   </info>
 

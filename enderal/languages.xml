@@ -3,7 +3,7 @@
 	<info>
 		<name>Languages of Vyn</name>
 		<update version="0.0.1">
-			<file name="languages.xml" url="[YOUR_GITHUB_RAW_URL_HERE]" />
+			<file name="languages.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/languages.xml" />
 		</update>
 	</info>
 
