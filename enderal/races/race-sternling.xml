@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sternling</name>
+		<description>Stout subterranean dwellers with stonecunning abilities</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-sternling.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-sternling.xml" />
+		</update>
+	</info>
+
+	<element name="Sternling" type="Race" source="Enderal Handbook" id="ID_RACE_STERNLING">
+		<description>
+            <h4>Sternling Names</h4>
+            <p>Sternling names feature hard consonants and guttural sounds, reflecting their underground origins.</p>
+            <p>
+                <b>Male Names:</b> Borin, Dvalin, Grumnir, Hjalgrim, Krag, Thorgar, Vondal
+                <br/>
+                <b>Female Names:</b> Brynja, Drifa, Fjola, Hilda, Kára, Sigrun, Thora
+            </p>
+
+			<h4>Sternling traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2, and your Wisdom score increases by 1.
+			    <br />
+			    <span class="feature">Age.</span>Sternling mature slowly and live 300-400 years.
+			    <br />
+			    <span class="feature">Alignment.</span>Tradition-bound and practical, they strongly favor lawful alignments.
+			    <br />
+			    <span class="feature">Size.</span>Sternling stand 4-5 feet tall with dense builds. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 25 feet.
+			    <br />
+                <span class="feature">Stonecunning</span>Add double proficiency bonus to History checks related to stonework.
+			    <span class="feature">Ancient Mechanic</span>Advantage on attack rolls against constructs and subterranean creatures.
+			    <span class="feature">Darkvision</span>You can see in dim light within 60 feet as if bright light.
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Sternling and Vynic.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Borin, Dvalin, Grumnir, Hjalgrim, Krag, Thorgar, Vondal, Rugnar</set>
+            <set name="names" type="female">Brynja, Drifa, Fjola, Hilda, Kára, Sigrun, Thora, Ulfhild</set>
+            <set name="names" type="Surname">Stonehand, Ironfoot, Deepdelver, Forgeheart, Anvilbeard, Mountainroot, Gemcutter</set>
+            <set name="names-format">{{firstName}} {{Surname}}</set>
+			<set name="height" modifier="2d4">4'6"</set>
+			<set name="weight" modifier="2d6">180 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2"/>
+			<stat name="wisdom" value="1" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_STERNLING" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_STONECUNNING" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ANCIENT_MECHANIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DARKVISION_60" />
+		</rules>
+	</element>
+	
+	<element name="Stonecunning" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_STONECUNNING">
+		<description>
+			<p>Whenever you make an Intelligence (History) check related to stonework, you are considered proficient and add double your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Double proficiency on stonework History checks</description>
+		</sheet>
+	</element>
+	
+	<element name="Ancient Mechanic" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_ANCIENT_MECHANIC">
+		<description>
+			<p>You have advantage on attack rolls against constructs and creatures native to subterranean environments.</p>
+		</description>
+        <sheet>
+			<description>Advantage vs. constructs/subterranean foes</description>
+		</sheet>
+	</element>
+	
+	<element name="Darkvision" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_DARKVISION_60">
+		<description>
+			<p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.</p>
+		</description>
+        <sheet>
+			<description>Darkvision 60ft</description>
+		</sheet>
+	</element>
+</elements>

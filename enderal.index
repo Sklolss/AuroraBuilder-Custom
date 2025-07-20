@@ -13,8 +13,16 @@
 
     <!-- races-->
     <file name="Arazealean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-arazealean.xml" />
-    <file name="Arazealean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-kilean.xml" />
-    
+    <file name="race-pyreborn.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-pyreborn.xml" />
+    <file name="race-ashborn.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-ashborn.xml" />
+    <file name="race-sternling.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-sternling.xml" />
+    <file name="race-aeterna.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-aeterna.xml" />
+    <file name="race-half-aeterna.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-half-aeterna.xml" />
+    <file name="race-kilean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-kileanien.xml" />
+    <file name="race-qyraner.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-qyraner.xml" />
+    <file name="race-endralean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-endralean.xml" />
+
+
     <!-- misc -->
     <file name="languages.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/languages.xml" />
     <file name="deities.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/deities.xml" />

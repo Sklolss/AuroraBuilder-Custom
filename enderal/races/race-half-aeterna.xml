@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Half-Aeterna</name>
+		<description>Half-elves with innate magical talent from Aeterna lineage</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-half-aeterna.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-half-aeterna.xml" />
+		</update>
+	</info>
+
+	<element name="Half-Aeterna" type="Race" source="Enderal Handbook" id="ID_RACE_HALF_AETERNA">
+		<description>
+            <h4>Half-Aeterna Names</h4>
+            <p>Half-Aeterna names blend human and elven influences, often melodic with soft consonants.</p>
+            <p>
+                <b>Male Names:</b> Arion, Elyas, Faelar, Kaelen, Lorian, Soren, Theron
+                <br/>
+                <b>Female Names:</b> Aelith, Elara, Lyraena, Sylria, Thalia, Virelle, Ysabel
+            </p>
+
+			<h4>Half-Aeterna traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 2, and your Dexterity score increases by 1.
+			    <br />
+			    <span class="feature">Age.</span>Half-Aeterna mature at human rates but live 180-250 years.
+			    <br />
+			    <span class="feature">Alignment.</span>Inheriting Aeterna curiosity, they tend toward chaotic alignments.
+			    <br />
+			    <span class="feature">Size.</span>Half-Aeterna are slender and graceful. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Arcane Affinity</span>You gain proficiency in Arcana and one wizard cantrip.
+			    <span class="feature">Aeterna Bloodline</span>You have advantage against charm and sleep effects.
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Vynic and Áternaish.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Arion, Elyas, Faelar, Kaelen, Lorian, Soren, Theron, Varyn</set>
+            <set name="names" type="female">Aelith, Elara, Lyraena, Sylria, Thalia, Virelle, Ysabel, Zephyra</set>
+            <set name="names" type="Surname">Moonshadow, Starweaver, Nightbreeze, Dawnsinger, Emberglow, Frostwhisper, Stormrider</set>
+            <set name="names-format">{{firstName}} {{Surname}}</set>
+			<set name="height" modifier="2d8">5'7"</set>
+			<set name="weight" modifier="1d4">130 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2"/>
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Language" id="ID_LANGUAGE_ATERNAISH" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_AFFINITY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AETERNA_BLOODLINE" />
+		</rules>
+	</element>
+	
+	<element name="Arcane Affinity" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_ARCANE_AFFINITY">
+		<description>
+			<p>You gain proficiency in the Arcana skill and learn one wizard cantrip of your choice.</p>
+		</description>
+		<sheet>
+			<description>Arcana proficiency + one wizard cantrip</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Spell" level="0" class="ID_CLASS_WIZARD" count="1" />
+		</rules>
+	</element>
+	
+	<element name="Aeterna Bloodline" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_AETERNA_BLOODLINE">
+		<description>
+			<p>You have advantage on saving throws against being charmed or put to sleep by magic.</p>
+		</description>
+        <sheet>
+			<description>Advantage vs. charm/sleep effects</description>
+		</sheet>
+	</element>
+</elements>

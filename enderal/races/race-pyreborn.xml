@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pyreborn</name>
+		<description>Draconic descendants with elemental resistances</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-pyreborn.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-pyreborn.xml" />
+		</update>
+	</info>
+
+	<element name="Pyreborn" type="Race" source="Enderal Handbook" id="ID_RACE_PYREBORN">
+		<description>
+            <h4>Pyreborn Names</h4>
+            <p>Pyreborn names often incorporate draconic elements and fiery themes.</p>
+            <p>
+                <b>Male Names:</b> Drakon, Ignis, Pyroth, Smoulder, Volcan, Cindar, Blazius
+                <br/>
+                <b>Female Names:</b> Embera, Fyra, Scoria, Solara, Vulcana, Ashara, Pyria
+            </p>
+
+			<h4>Pyreborn traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and your Charisma score increases by 1.
+			    <br />
+			    <span class="feature">Age.</span>Pyreborn mature at human rates but live 80-120 years.
+			    <br />
+			    <span class="feature">Alignment.</span>Their draconic heritage inclines them toward extremes of alignment.
+			    <br />
+			    <span class="feature">Size.</span>Pyreborn have imposing, muscular builds. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Draconic Legacy</span>You can exhale fire (15ft cone, 2d6 fire damage, CON save DC 8+CON+PB) 1/short rest.
+			    <span class="feature">Scales of the Lost</span>Resistance to two damage types (choose: fire, necrotic, or acid).
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Vynic and Draconic.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Drakon, Ignis, Pyroth, Smoulder, Volcan, Cindar, Blazius, Flameheart</set>
+            <set name="names" type="female">Embera, Fyra, Scoria, Solara, Vulcana, Ashara, Pyria, Magmara</set>
+            <set name="names" type="Surname">Emberhide, Cinderscale, Ashwing, Flametongue, Pyreheart, Smokebrand, Scorchclaw</set>
+            <set name="names-format">{{firstName}} {{Surname}}</set>
+			<set name="height" modifier="2d10">6'2"</set>
+			<set name="weight" modifier="2d10">220 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2"/>
+			<stat name="charisma" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRACONIC_LEGACY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SCALES_OF_THE_LOST" />
+		</rules>
+	</element>
+	
+	<element name="Draconic Legacy" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_DRACONIC_LEGACY">
+		<description>
+			<p>Once per short rest, you can exhale fire in a 15-foot cone. Each creature in the area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet>
+			<description>Fire breath weapon (2d6, 15ft cone, 1/short rest)</description>
+		</sheet>
+	</element>
+	
+	<element name="Scales of the Lost" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_SCALES_OF_THE_LOST">
+		<description>
+			<p>Choose two damage types from fire, necrotic, or acid. You have resistance to those damage types.</p>
+		</description>
+        <sheet>
+			<description>Resistance to two damage types (fire/necrotic/acid)</description>
+		</sheet>
+	</element>
+</elements>

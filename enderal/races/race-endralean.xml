@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Endralean</name>
+		<description>Theocratic humans from Enderal with rigid social structures</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-endralean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-endralean.xml" />
+		</update>
+	</info>
+
+	<element name="Endralean" type="Race" source="Enderal Handbook" id="ID_RACE_ENDALEAN">
+		<description>
+            <h4>Endralean Names</h4>
+            <p>Endralean names reflect their theocratic society, often incorporating religious or virtuous concepts.</p>
+            <p>
+                <b>Male Names:</b> Tealor, Arthorn, Galadir, Ketaron, Loram, Yero, Jespar
+                <br/>
+                <b>Female Names:</b> Lishari, Calia, Kilana, Selna
+            </p>
+
+			<h4>Endralean traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Increase one ability score by 2.
+			    <br />
+			    <span class="feature">Age.</span>Endraleans live to be around 70-90 years.
+			    <br />
+			    <span class="feature">Alignment.</span>Strongly influenced by the Holy Order, most lean toward lawful alignments.
+			    <br />
+			    <span class="feature">Size.</span>Endraleans have average human builds. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Versatile</span>You gain proficiency in one skill of your choice.
+			    <span class="feature">Ambitious</span>You gain one feat at 1st level.
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Vynic.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Tealor, Arthorn, Galadir, Malphas, Ketaron, Loram, Yero</set>
+            <set name="names" type="female">Lishari, Calia, Kilana, Selna</set>
+            <set name="names" type="Surname">Arantheal, Waterblade, Hammerfist, Varek, Marak, Tannerson</set>
+            <set name="names" type="nobilityPrefix">Dal'</set>
+            <set name="names-format">{{firstName}} {{nobilityPrefix}?{Surname}}</set>
+			<set name="height" modifier="2d8">5'9"</set>
+			<set name="weight" modifier="2d4">160 lb.</set>
+		</setters>
+		<rules>
+            <select type="Racial Trait" name="Ability Score Increase (Endralean)" supports="Endralean" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VERSATILE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMBITIOUS" />
+		</rules>
+	</element>
+	
+	<element name="Versatile" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_VERSATILE">
+		<description>
+			<p>You gain proficiency in one skill of your choice.</p>
+		</description>
+		<sheet>
+			<description>Gain proficiency in one skill</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILLS_CHOICE" count="1" />
+		</rules>
+	</element>
+	
+	<element name="Ambitious" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_AMBITIOUS">
+		<description>
+			<p>You gain one feat at 1st level.</p>
+		</description>
+        <sheet>
+			<description>Gain one feat at 1st level</description>
+		</sheet>
+		<rules>
+			<grant type="Feat" count="1"/>
+		</rules>
+	</element>
+
+	<!-- Ability Score Traits -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_STRENGTH">
+		<supports>Endralean</supports>
+		<description><p>Your Strength score increases by 2.</p></description>
+		<rules><stat name="strength" value="2"/></rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_DEXTERITY">
+		<supports>Endralean</supports>
+		<description><p>Your Dexterity score increases by 2.</p></description>
+		<rules><stat name="dexterity" value="2"/></rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_CONSTITUTION">
+		<supports>Endralean</supports>
+		<description><p>Your Constitution score increases by 2.</p></description>
+		<rules><stat name="constitution" value="2"/></rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_INTELLIGENCE">
+		<supports>Endralean</supports>
+		<description><p>Your Intelligence score increases by 2.</p></description>
+		<rules><stat name="intelligence" value="2"/></rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_WISDOM">
+		<supports>Endralean</supports>
+		<description><p>Your Wisdom score increases by 2.</p></description>
+		<rules><stat name="wisdom" value="2"/></rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_CHARISMA">
+		<supports>Endralean</supports>
+		<description><p>Your Charisma score increases by 2.</p></description>
+		<rules><stat name="charisma" value="2"/></rules>
+	</element>
+</elements>

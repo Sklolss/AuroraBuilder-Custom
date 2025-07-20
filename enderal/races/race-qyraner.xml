@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Qyraner</name>
+		<description>Desert-dwellers from Qyra known for scientific advancement and polyamorous social structures</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-qyraner.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-qyraner.xml" />
+		</update>
+	</info>
+
+	<element name="Qyraner" type="Race" source="Enderal Handbook" id="ID_RACE_QYRANER">
+		<description>
+            <h4>Qyraner Names</h4>
+            <p>Qyraner names often incorporate soft consonants and flowing vowels, reflecting their desert heritage and mystical traditions.</p>
+            <p>
+                <b>Male Names:</b> Khalis, Zephyr, Rahim, Soren, Talib, Varek, Yunis
+                <br/>
+                <b>Female Names:</b> Zahra, Amara, Leyla, Nalani, Soraya, Thalassa, Zaina
+            </p>
+
+			<h4>Qyraner traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Increase three ability scores of your choice by 1.
+			    <br />
+			    <span class="feature">Age.</span>Qyraner mature quickly and live slightly shorter lives than other humans, typically 70-90 years.
+			    <br />
+			    <span class="feature">Alignment.</span>Qyraner circles value communal harmony and intellectual freedom, tending toward neutral alignments.
+			    <br />
+			    <span class="feature">Size.</span>Qyraners have slender builds adapted to desert life. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Desert Swiftness</span>Once per day, you can take the Dash action as a bonus action.
+			    <span class="feature">Heat Adaptation</span>You automatically succeed on saving throws against extreme heat effects.
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Vynic and Qyraner.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Khalis, Zephyr, Rahim, Soren, Talib, Varek, Yunis, Darian</set>
+            <set name="names" type="female">Zahra, Amara, Leyla, Nalani, Soraya, Thalassa, Zaina, Farida</set>
+            <set name="names" type="Surname">al'Khem, ibn'Sahir, esh'Ravi, ul'Zahir, bint'Kadar, bint'Nasir, al'Jafari</set>
+            <set name="names-format">{{firstName}} {{Surname}}</set>
+			<set name="height" modifier="2d6">5'10"</set>
+			<set name="weight" modifier="1d8">150 lb.</set>
+		</setters>
+		<rules>
+            <select type="Racial Trait" name="Ability Score Increase (Qyraner)" supports="Qyraner" number="3"/>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DESERT_SWIFTNESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEAT_ADAPTATION" />
+		</rules>
+	</element>
+	
+	<element name="Desert Swiftness" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_DESERT_SWIFTNESS">
+		<description>
+			<p>Once per day, you can take the Dash action as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>Dash as bonus action 1/day</description>
+		</sheet>
+	</element>
+	
+	<element name="Heat Adaptation" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_HEAT_ADAPTATION">
+		<description>
+			<p>You automatically succeed on saving throws against effects of extreme heat.</p>
+		</description>
+        <sheet>
+			<description>Immune to effects of extreme heat</description>
+		</sheet>
+	</element>
+	
+	<!-- Ability Score Traits -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QYRANER_STRENGTH">
+		<supports>Qyraner</supports>
+		<description><p>Your Strength score increases by 1.</p></description>
+		<rules><stat name="strength" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QYRANER_DEXTERITY">
+		<supports>Qyraner</supports>
+		<description><p>Your Dexterity score increases by 1.</p></description>
+		<rules><stat name="dexterity" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QYRANER_CONSTITUTION">
+		<supports>Qyraner</supports>
+		<description><p>Your Constitution score increases by 1.</p></description>
+		<rules><stat name="constitution" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QYRANER_INTELLIGENCE">
+		<supports>Qyraner</supports>
+		<description><p>Your Intelligence score increases by 1.</p></description>
+		<rules><stat name="intelligence" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QYRANER_WISDOM">
+		<supports>Qyraner</supports>
+		<description><p>Your Wisdom score increases by 1.</p></description>
+		<rules><stat name="wisdom" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QYRANER_CHARISMA">
+		<supports>Qyraner</supports>
+		<description><p>Your Charisma score increases by 1.</p></description>
+		<rules><stat name="charisma" value="1"/></rules>
+	</element>
+</elements>

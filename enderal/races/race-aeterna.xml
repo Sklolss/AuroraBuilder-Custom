@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Aéterna</name>
+		<description>Ancient elf-like beings with innate magical abilities</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-aeterna.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-aeterna.xml" />
+		</update>
+	</info>
+
+	<element name="Aéterna" type="Race" source="Enderal Handbook" id="ID_RACE_AETERNA">
+		<description>
+            <h4>Aéterna Names</h4>
+            <p>Aéterna names are flowing and melodic, often containing multiple syllables and soft vowels.</p>
+            <p>
+                <b>Male Names:</b> Asâtoron, Elorion, Faelarion, Kaelthas, Lorianth, Sylvaran, Therandil
+                <br/>
+                <b>Female Names:</b> Aelithra, Elariana, Lyraeniel, Sylrianth, Thalariel, Virellya, Ysabeleth
+            </p>
+
+			<h4>Aéterna traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 3, and your Charisma score increases by 1.
+			    <br />
+			    <span class="feature">Age.</span>Aéterna are virtually ageless, living 500+ years without physical decline.
+			    <br />
+			    <span class="feature">Alignment.</span>Ancient and contemplative, they lean toward neutral alignments.
+			    <br />
+			    <span class="feature">Size.</span>Aéterna are slender and graceful. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Ancient Knowledge</span>You know two wizard cantrips.
+			    <span class="feature">Ageless</span>You suffer no penalties from aging.
+			    <span class="feature">Fey Ancestry</span>You are immune to charm effects.
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Áternaish and Vynic language.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Asâtoron, Elorion, Faelarion, Kaelthas, Lorianth, Sylvaran, Therandil, Zephyron</set>
+            <set name="names" type="female">Aelithra, Elariana, Lyraeniel, Sylrianth, Thalariel, Virellya, Ysabeleth, Zephyra</set>
+            <set name="names" type="Surname">Moonshadow, Starweaver, Nightbreeze, Dawnsinger, Emberglow, Frostwhisper, Stormrider</set>
+            <set name="names-format">{{firstName}} {{Surname}}</set>
+			<set name="height" modifier="2d8">5'8"</set>
+			<set name="weight" modifier="1d4">125 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="3"/>
+			<stat name="charisma" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_ATERNAISH" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ANCIENT_KNOWLEDGE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AGELESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_ANCESTRY" />
+		</rules>
+	</element>
+	
+	<element name="Ancient Knowledge" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_ANCIENT_KNOWLEDGE">
+		<description>
+			<p>You know two cantrips of your choice from the wizard spell list.</p>
+		</description>
+		<sheet>
+			<description>Two wizard cantrips</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" level="0" class="ID_CLASS_WIZARD" count="2" />
+		</rules>
+	</element>
+	
+	<element name="Ageless" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_AGELESS">
+		<description>
+			<p>You suffer no penalties from aging and cannot be magically aged.</p>
+		</description>
+        <sheet>
+			<description>No aging penalties and cannot be magically aged.</description>
+		</sheet>
+	</element>
+	
+	<element name="Fey Ancestry" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_FEY_ANCESTRY">
+		<description>
+			<p>You are immune to being charmed.</p>
+		</description>
+        <sheet>
+			<description>Immune to charm effects</description>
+		</sheet>
+	</element>
+</elements>

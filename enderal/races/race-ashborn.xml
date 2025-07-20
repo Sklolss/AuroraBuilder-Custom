@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ashborn</name>
+		<description>Fire-touched beings with shadowy abilities and light sensitivity</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-ashborn.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-ashborn.xml" />
+		</update>
+	</info>
+
+	<element name="Ashborn" type="Race" source="Enderal Handbook" id="ID_RACE_ASHBORN">
+		<description>
+            <h4>Ashborn Names</h4>
+            <p>Ashborn names often incorporate shadow and fire motifs, reflecting their dual nature.</p>
+            <p>
+                <b>Male Names:</b> Cinder, Emberon, Pyreus, Smolder, Asher, Blaze, Shadow
+                <br/>
+                <b>Female Names:</b> Ashara, Cindria, Emberly, Pyralis, Soot, Umbra, Vesper
+            </p>
+
+			<h4>Ashborn traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2, and your Intelligence score increases by 1.
+			    <br />
+			    <span class="feature">Age.</span>Ashborn mature quickly and live about 200 years.
+			    <br />
+			    <span class="feature">Alignment.</span>Their shadowy nature inclines them toward neutral or chaotic alignments.
+			    <br />
+			    <span class="feature">Size.</span>Ashborn have slender, agile builds. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Ember-Touched</span>You have resistance to fire damage.
+			    <span class="feature">Veilwalker</span>Proficiency in Stealth and can cast Disguise Self once per day.
+			    <span class="feature">Sunlight Sensitivity</span>Disadvantage on Perception and attack rolls in sunlight.
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Vynic and Ashlander.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <set name="names" type="male">Cinder, Emberon, Pyreus, Smolder, Asher, Blaze, Shadow, Coal</set>
+            <set name="names" type="female">Ashara, Cindria, Emberly, Pyralis, Soot, Umbra, Vesper, Gloom</set>
+            <set name="names" type="Surname">Ashwalker, Cinderfoot, Emberhand, Flamecloak, Shadowdancer, Smokeveil, Nightbrand</set>
+            <set name="names-format">{{firstName}} {{Surname}}</set>
+			<set name="height" modifier="2d6">5'6"</set>
+			<set name="weight" modifier="1d6">120 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2"/>
+			<stat name="intelligence" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Language" id="ID_LANGUAGE_ASHLANDER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMBER_TOUCHED" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VEILWALKER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
+		</rules>
+	</element>
+	
+	<element name="Ember-Touched" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_EMBER_TOUCHED">
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet>
+			<description>Fire resistance</description>
+		</sheet>
+	</element>
+	
+	<element name="Veilwalker" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_VEILWALKER">
+		<description>
+			<p>You gain proficiency in the Stealth skill and can cast Disguise Self once per day.</p>
+		</description>
+        <sheet>
+			<description>Stealth proficiency + Disguise Self 1/day</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>You have disadvantage on attack rolls and Wisdom (Perception) checks when in direct sunlight.</p>
+		</description>
+        <sheet>
+			<description>Disadvantage in sunlight</description>
+		</sheet>
+	</element>
+</elements>
