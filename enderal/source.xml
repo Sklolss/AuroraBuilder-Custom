@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="sources.xml" url="" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/source.xml" />
 		</update>
 	</info>
 	<element name="Enderal Handbook" type="Source" source="Enderal Handbook" url="https://github.com/Sklolss/Enderal-Pen-and-Paper" id="ID_WOTC_SOURCE_PLAYERS_HANDBOOK">
