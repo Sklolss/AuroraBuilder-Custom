@@ -9,9 +9,9 @@
 		</update>
 	</info>
 	
-	<element name="Arazealean" type="Race" source="Enderal Handbook" id="ID_RACE_Arazealean">
+	<element name="Arazealean" type="Race" source="Enderal Handbook" id="ID_RACE_ARAZEALEAN">
 		<description>
-      <h4>Arazealean NAMES</h4>
+      <h4>Arazealean names</h4>
 			<p> Arazealean (specifically, Civilized) names are short and rarely more than two syllables. But they almost always have a second first name. The surnames indicate the social class to which they belong</p>
       <p>
         <b>Male Names: Male names often, but notalways, end in -yk. Example: Riyk Yol Vi (Riyk The Lowly Craftsman) </b>
@@ -23,13 +23,13 @@
 			<p>
 			<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2, and your Strength score increases by 1.
 			<br />
-			<span class="feature">Age.</span>Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.
+			<span class="feature">Age.</span>They live to be around 70 to 90 years old.
 			<br />
-			<span class="feature">Alignment.</span>Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains.
+			<span class="feature">Alignment.</span>Arazealean tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most arazealean are good, but those who side with evil can be terrible villains.
 			<br />
 			<span class="feature">Size.</span>Arazealean are taller and heavier than most other humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.
 			<br />
-			<span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			<span class="feature">Speed.</span>Your base walking speed is 40 feet.
 			<br />
       <span class="feature">Arazealean Resilience</span>Your Unarmored AC is 13 + your STR modifier.
 			<span class="feature">Unbreakable</span>You have advantage to saves against exhaustion, disease and poison.
@@ -51,13 +51,13 @@
       <!-- Optional Secondary Surnames (if needed for nobility, clans, etc.) -->
       <set name="names" type="optionalSurname">Xan, Droth, Khar, Vess, Rhan, Syl, Morth, Yth</set>
 			<set name="names-format">{{firstName}{ {secondFirstName}?}{ {Surname}?}{ {optionalSurname}?}}</set>
-			<set name="height" modifier="2d8">5'6"</set>
-			<set name="weight" modifier="2d6">175 lb.</set>
+			<set name="height" modifier="2d8">6'8"</set>
+			<set name="weight" modifier="2d6">250 lb.</set>
 		</setters>
 		<rules>
 			<stat name="constitution" value="2"/>
 			<stat name="strength" value="1" />
-			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed" value="40" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARAZEALEAN_RESILIENCE" />

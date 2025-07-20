@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kiléan</name>
+		<description></description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-kilean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/refs/heads/main/enderal/races/race-kileanien.xml" />
+		</update>
+	</info>
+
+
+	<element name="Kiléan" type="Race" source="Enderal Handbook" id="ID_RACE_KILEANIEN">
+		<description>
+            <h4>Kiléan Names</h4>
+            <p>Kiléan names are soft and melodic, featuring flowing double vowels and minimal harsh consonants. They often reflect the islanders' connection to the sea and trade.</p>
+            <p>
+                <b>Male Names:</b> Typically end with open vowels. Example: Oolan Davuul (Oolan of the Davuul clan)
+                <br/>
+                <b>Female Names:</b> Often feature repeating vowel patterns. Example: Dijaam Onêlys (Dijaam of the Onêlys family)
+            </p>
+
+			<h4>Kiléan traits</h4>
+		    <p>
+			    <span class="feature">Ability Score Increase.</span>Your increase 2 scores by 1, and your Charisma score increases by 1.
+			    <br />
+			    <span class="feature">Age.</span>They live to be around 70 to 90 years old.
+			    <br />
+			    <span class="feature">Alignment.</span>Kiléan tend to focus on themselves and those very close to them. Most kiléan are chaotic, and focuse on their wealth.
+			    <br />
+			    <span class="feature">Size.</span>Kiléan are no different than most other humans. Your size is Medium.
+			    <br />
+			    <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature">Silver Tongued</span>You are proficient in Persuasion and know one additional language.
+			    <span class="feature">Gilded Ambition</span>You can cast Charm Person 1 per day (CHA)
+			    <br />
+			    <span class="feature">Languages.</span>You can speak, read, and write Vynic and Makehu.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+            <!-- Male Names (vowel-ending) -->
+            <set name="names" type="male">Oolan, Uajaan, Raaijlas, Aadeem, Iilaan, Eeruul, Oovaan, Uuljas</set>
+            <!-- Female Names (double-vowel patterns) -->
+            <set name="names" type="female">Dijaam, Aaliah, Eevanna, Oolara, Iiriel, Uulana, Eedara, Oovelia</set>
+            <!-- Clan/Family Names -->
+            <set name="names" type="Surname">Onêlys, Davuul, Vuul, Meeris, Aalos, Oorith, Eethan, Iivari</set>
+            <!-- Titles/Roles (optional) -->
+            <set name="names" type="optionalSurname">Envoy, Trader, Captain, Tidecaller, Wavebinder, Coralweaver, Saltseer, Stormvoice</set>
+            <set name="names-format">{{firstName}} {{Surname}}{ {optionalSurname}?}</set>
+			<set name="height" modifier="2d8">5'6"</set>
+			<set name="weight" modifier="2d6">175 lb.</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1"/>
+            <select type="Racial Trait" name="Ability Score Increase (Kiléan)" supports="Kiléan" number="2" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK"/>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Language" id="ID_LANGUAGE_MAKEHU" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GILDED_AMBITION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SILVER_TONGUED" />
+		</rules>
+	</element>
+	<element name="Silver Tongued" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_SILVER_TONGUED">
+		<description>
+			<p>You have proficiency in the Persusasion skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Persusasion skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Gilded Ambition" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_GILDED_AMBITION">
+		<description>
+			<p>You can cast Charm Person 1 per day (CHA).</p>
+		</description>
+        <sheet>
+			<description>You can cast Charm Person 1 per day (CHA)</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON"/>
+        </rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_DEXTERITY">
+		<compendium display="false" />
+		<supports>Kiléan</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Kiléan</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Kiléan</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KILEAN_WISDOM">
+		<compendium display="false" />
+		<supports>Kiléan</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+
+    <!-- Mythic Trait-->
+  <element name="Silver-Tongued Demagogue" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_SILVER_TONGUED_DEMAGOGUE">
+      <description>
+          <p>Once unlocked, you gain all of the below boni:
+            <ul>
+              <li><strong>Renowned Trader:</strong> Increase your CHA score by 2 (max 22).</li>
+              <li><strong>Golden Lies:</strong> Your Charm Person works on creatures immune to charm (but they remember being manipulated).</li>
+              <li><strong>Guild Lord's Command:</strong> Issue a 10-word command (as Suggestion) to all who can hear you once per day (Wisdom save negates).</li>
+            </ul>
+          </p>
+      </description>
+      <setters>
+          <!-- Hidden mechanics for system tracking -->
+          <set name="ability">cha</set>
+          <set name="ability bonus">2</set>
+          <set name="ability maximum">22</set>
+      </setters>
+      <sheet>
+          <description>
+              <p><strong>Silver-Tongued Demagogue:</strong></p>
+              <ul>
+                  <li><strong>Renowned Trader:</strong> Increase your CHA score by 2 (max 22).</li>
+                  <li><strong>Golden Lies:</strong> Your Charm Person works on creatures immune to charm (but they remember being manipulated).</li>
+                  <li><strong>Guild Lord's Command:</strong> Issue a 10-word command (as Suggestion) to all who can hear you once per day (Wisdom save negates).</li>
+              </ul>
+          </description>
+      </sheet>
+  </element>
+
+</elements>
