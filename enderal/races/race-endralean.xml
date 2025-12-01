@@ -21,7 +21,7 @@
 
 			<h4>Endralean traits</h4>
 		    <p>
-			    <span class="feature">Ability Score Increase.</span>Increase one ability score by 2.
+			    <span class="feature">Ability Score Increase.</span>Increase 2 ability score by 1.
 			    <br />
 			    <span class="feature">Age.</span>Endraleans live to be around 70-90 years.
 			    <br />
@@ -49,7 +49,7 @@
 			<set name="weight" modifier="2d4">160 lb.</set>
 		</setters>
 		<rules>
-            <select type="Racial Trait" name="Ability Score Increase (Endralean)" supports="Endralean" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase (Endralean)" supports="Endralean" number="2" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
@@ -79,32 +79,32 @@
 	<!-- Ability Score Traits -->
 	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_STRENGTH">
 		<supports>Endralean</supports>
-		<description><p>Your Strength score increases by 2.</p></description>
-		<rules><stat name="strength" value="2"/></rules>
+		<description><p>Your Strength score increases by 1.</p></description>
+		<rules><stat name="strength" value="1"/></rules>
 	</element>
 	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_DEXTERITY">
 		<supports>Endralean</supports>
-		<description><p>Your Dexterity score increases by 2.</p></description>
-		<rules><stat name="dexterity" value="2"/></rules>
+		<description><p>Your Dexterity score increases by 1.</p></description>
+		<rules><stat name="dexterity" value="1"/></rules>
 	</element>
 	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_CONSTITUTION">
 		<supports>Endralean</supports>
-		<description><p>Your Constitution score increases by 2.</p></description>
-		<rules><stat name="constitution" value="2"/></rules>
+		<description><p>Your Constitution score increases by 1.</p></description>
+		<rules><stat name="constitution" value="1"/></rules>
 	</element>
 	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_INTELLIGENCE">
 		<supports>Endralean</supports>
-		<description><p>Your Intelligence score increases by 2.</p></description>
-		<rules><stat name="intelligence" value="2"/></rules>
+		<description><p>Your Intelligence score increases by 1.</p></description>
+		<rules><stat name="intelligence" value="1"/></rules>
 	</element>
 	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_WISDOM">
 		<supports>Endralean</supports>
-		<description><p>Your Wisdom score increases by 2.</p></description>
-		<rules><stat name="wisdom" value="2"/></rules>
+		<description><p>Your Wisdom score increases by 1.</p></description>
+		<rules><stat name="wisdom" value="1"/></rules>
 	</element>
 	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_ENDRALEAN_CHARISMA">
 		<supports>Endralean</supports>
-		<description><p>Your Charisma score increases by 2.</p></description>
-		<rules><stat name="charisma" value="2"/></rules>
+		<description><p>Your Charisma score increases by 1.</p></description>
+		<rules><stat name="charisma" value="1"/></rules>
 	</element>
 </elements>
