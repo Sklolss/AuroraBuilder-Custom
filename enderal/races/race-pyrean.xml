@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pyrean</name>
+		<description>Theocratic humans from Pyra. They suddenly vanished thousends of years ago.</description>
+		<author url="https://github.com/Sklolss">Sklolss</author>
+		<update version="0.0.1">
+			<file name="race-pyrean.xml" url="https://raw.githubusercontent.com/Sklolss/AuroraBuilder-Custom/main/enderal/races/race-pyrean.xml" />
+		</update>
+	</info>
+
+	<element name="Pyrean" type="Race" source="Enderal Handbook" id="ID_RACE_ENDALEAN">
+		<description>
+			<h4>Pyrean traits</h4>
+		    <p>
+			    <span class="feature"><strong>Ability Score Increase.</strong></span>Your Charisma score inceases by 2 and one other score by 1.
+			    <br />
+			    <span class="feature"><strong>Age.</strong></span>It is believed that pyreans live around 90 to 120 years.
+			    <br />
+			    <span class="feature"><strong>Alignment.</strong></span>Not much is known about the pyreans, the current scientific consensus is that they were similar to most human races.
+			    <br />
+			    <span class="feature"><strong>Size.</strong></span>Pyreans have slightly above average human builds. They range between 197cm to 240cm. Your size is Medium.
+			    <br />
+			    <span class="feature"><strong>Speed.</strong></span>Your base walking speed is 30 feet.
+			    <br />
+                <span class="feature"><strong>Versatile</strong></span>You gain proficiency in one skill of your choice.
+                <span class="feature"><strong>Born historian</strong></span>You are a living relic. You gain proficiency in History.
+			    <span class="feature"><strong>Ambitious</strong></span>You gain one feat at 1st level.
+			    <br />
+			    <span class="feature"><strong>Languages.</strong></span>You can speak, read, and write Vynic and Pyrean.
+			    <br />
+		    </p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+            <stat name="charisma" value="2">
+            <select type="Racial Trait" name="Ability Score Increase (Pyrean)" supports="Pyrean" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VERSATILE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMBITIOUS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BORN_HISTORIAN" />
+		</rules>
+	</element>
+	
+	<element name="Versatile" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_VERSATILE">
+		<description>
+			<p>You gain proficiency in one skill of your choice.</p>
+		</description>
+		<rules>
+			 <select type="Proficiency" name="Skill Proficiency (Pyrean)" supports="Skill" />
+		</rules>
+	</element>
+
+    <element name="Born historian" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_BORN_HISTORIAN">
+		<description>
+			<p>You are a living relic. You gain proficiency in History.</p>
+		</description>
+		<rules>
+			 <select type="Proficiency" name="Skill Proficiency (Pyrean)" supports="Skill" />
+		</rules>
+	</element>
+	
+	<element name="Ambitious" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_AMBITIOUS">
+		<description>
+			<p>You gain one feat at 1st level.</p>
+		</description>
+		<rules>
+			<select type="Feat" name="Feat (Pyrean)" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Traits -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PYREAN_STRENGTH">
+		<supports>Pyrean</supports>
+		<description><p>Your Strength score increases by 1.</p></description>
+		<rules><stat name="strength" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PYREAN_DEXTERITY">
+		<supports>Pyrean</supports>
+		<description><p>Your Dexterity score increases by 1.</p></description>
+		<rules><stat name="dexterity" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PYREAN_CONSTITUTION">
+		<supports>Pyrean</supports>
+		<description><p>Your Constitution score increases by 1.</p></description>
+		<rules><stat name="constitution" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PYREAN_INTELLIGENCE">
+		<supports>Pyrean</supports>
+		<description><p>Your Intelligence score increases by 1.</p></description>
+		<rules><stat name="intelligence" value="1"/></rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PYREAN_WISDOM">
+		<supports>Pyrean</supports>
+		<description><p>Your Wisdom score increases by 1.</p></description>
+		<rules><stat name="wisdom" value="1"/></rules>
+	</element>
+</elements>
