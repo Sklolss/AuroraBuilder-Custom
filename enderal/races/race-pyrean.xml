@@ -58,7 +58,7 @@
 			<p>You are a living relic. You gain proficiency in History.</p>
 		</description>
 		<rules>
-			 <grant type="Proficiency" name="Skill Proficiency (Pyrean)" supports="ID_PROFICIENCY_SKILL_HISTORY" />
+			 <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
 		</rules>
 	</element>
 	
