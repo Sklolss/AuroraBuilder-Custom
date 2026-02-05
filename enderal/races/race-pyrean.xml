@@ -23,8 +23,7 @@
 			    <br />
 			    <span class="feature"><strong>Speed.</strong></span>Your base walking speed is 30 feet.
 			    <br />
-                <span class="feature"><strong>Versatile</strong></span>You gain proficiency in one skill of your choice.
-                <span class="feature"><strong>Born historian</strong></span>You are a living relic. You gain proficiency in History.
+                <span class="feature"><strong>Born historian</strong></span>You are a living relic. You gain proficiency in History and 1 other skill. You have advantage on rolls regarding your own culture.
 			    <span class="feature"><strong>Ambitious</strong></span>You gain one feat at 1st level.
 			    <br />
 			    <span class="feature"><strong>Languages.</strong></span>You can speak, read, and write Vynic and Pyrean.
@@ -38,18 +37,8 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_VYNIC" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VERSATILE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMBITIOUS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BORN_HISTORIAN" />
-		</rules>
-	</element>
-	
-	<element name="Versatile" type="Racial Trait" source="Enderal Handbook" id="ID_RACIAL_TRAIT_VERSATILE">
-		<description>
-			<p>You gain proficiency in one skill of your choice.</p>
-		</description>
-		<rules>
-			 <select type="Proficiency" name="Skill Proficiency (Pyrean)" supports="Skill" />
 		</rules>
 	</element>
 
@@ -57,8 +46,14 @@
 		<description>
 			<p>You are a living relic. You gain proficiency in History.</p>
 		</description>
+        <sheet>
+			<description>
+                <p>You gain proficiency in History and 1 other skill. You have advantage on rolls regarding your own culture.</p>
+            </description>
+		</sheet>
 		<rules>
 			 <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+             <select type="Proficiency" name="Skill Proficiency (Pyrean)" supports="Skill" />
 		</rules>
 	</element>
 	
@@ -66,6 +61,12 @@
 		<description>
 			<p>You gain one feat at 1st level.</p>
 		</description>
+        <sheet>
+			<description>
+                <p>You gain one feat at 1st level</p>
+            </description>
+		</sheet>
+
 		<rules>
 			<select type="Feat" name="Feat (Pyrean)" />
 		</rules>
