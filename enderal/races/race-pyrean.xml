@@ -33,7 +33,7 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-            <stat name="charisma" value="2">
+            <stat name="charisma" value="2"/>
             <select type="Racial Trait" name="Ability Score Increase (Pyrean)" supports="Pyrean" number="1" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
